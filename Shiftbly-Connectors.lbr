@@ -99,11 +99,12 @@
 </devices>
 </deviceset>
 <deviceset name="M01" prefix="P">
+<description>Connectors</description>
 <gates>
 <gate name="G$1" symbol="M01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="14-AWG" package="M01-POWER">
+<device name="" package="M01-POWER">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
