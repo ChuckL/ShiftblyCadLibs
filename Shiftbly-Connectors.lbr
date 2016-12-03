@@ -66,6 +66,10 @@
 <text x="-2.54" y="2.54" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
+<package name="M02-SMD">
+<smd name="P$1" x="-2.54" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
+<smd name="P$2" x="2.54" y="0" dx="2.54" dy="1.27" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M02">
@@ -89,9 +93,14 @@
 <devicesets>
 <deviceset name="M02">
 <gates>
+<gate name="G$1" symbol="M02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="M02-SMD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
